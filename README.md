@@ -59,7 +59,7 @@ git clone <link>
 2. Navigate to the project directory:
 
 ```bash
-cd <filename>
+
 ```
 
 ## Getting Started
