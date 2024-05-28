@@ -85,14 +85,15 @@ def user_input(user_question):
 
 def main():
     # Load animation from JSON
+   
+    st.header("Resume Analyser")
+    st.write("")
     try:
         with open('src/Resume.json', encoding='utf-8') as anim_source:
             animation = json.load(anim_source)
         st_lottie(animation, 1, True, True, "high", 200, -200)
     except FileNotFoundError:
         st.warning("Animation file not found.")
-
-    st.header("Resume Analyser")
 
     if 'pdf_docs' not in st.session_state:
         st.session_state.pdf_docs = None

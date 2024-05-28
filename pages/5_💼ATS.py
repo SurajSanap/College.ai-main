@@ -10,11 +10,12 @@ load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 model = genai.GenerativeModel('gemini-pro')
 
-st.title("------Applicant tracking systems------")
-st.text("👉🏻                  Personal ATS for Job-Seekers & Recruiters                   👈")
+st.header("Applicant tracking system")
+st.write("")
 with open('src/ATS.json') as anim_source:
     animation = json.load(anim_source)
 st_lottie(animation, 1, True, True, "high", 200, -200)
+#st.text("👉🏻                  Personal ATS for Job-Seekers & Recruiters                   👈")
 
 st.text_input("Job Role")
 desc = st.text_area("Paste the Job Description")

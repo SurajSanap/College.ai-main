@@ -90,8 +90,12 @@ def user_input(user_question):
 
 def main():
     st.set_page_config("College.ai", page_icon='🔍', layout='centered')
-    st.header("Ask_to_PDF- Start chat")
-
+    st.header("DocBot")
+    
+    st.write("")
+    with open('src/Robot.json', encoding='utf-8') as anim_source:
+        animation = json.load(anim_source)
+    st_lottie(animation, 1, True, True, "high", 100, -200)
     if 'pdf_docs' not in st.session_state:
         st.session_state.pdf_docs = None
 
@@ -114,9 +118,7 @@ def main():
                 get_vector_store(text_chunks)
                 st.success("Done, AI is trained")
 
-    with open('src/Robot.json', encoding='utf-8') as anim_source:
-        animation = json.load(anim_source)
-    st_lottie(animation, 1, True, True, "high", 100, -200)
+    
 
     user_question = st.text_input("Ask a Question from the PDF Files")
     enter_button = st.button('Enter')

@@ -2,10 +2,12 @@ import streamlit as st
 from streamlit_lottie import st_lottie 
 import json
 
-a = "About: "
-st.title(a)
+
+st.header("About")
+st.write("")
 with open('src/About.json') as anim_source:
     animation = json.load(anim_source)
+st.write("")
 st_lottie(animation, 1, True, True, "high", 200, -200)
 
 st.text("-                     ©️Suraj Sanap Project 2024                  -")
@@ -34,7 +36,7 @@ st.text("_______________________________________________________________________
 st.write("\n")
 st.write("\n")
 
-st.header("Page info:")
+st.header("Page info")
 
 def Lens():
     st.markdown("1. AI Lens")
