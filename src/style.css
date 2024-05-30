@@ -73,4 +73,39 @@ section[data-testid='stSidebar'] {
     div[data-testid="collapsedControl"]{
         display: none;
     }
+    /* Standardized headline formatting */
+        /* Added the following block to style headlines */
+        h1, h2, h3, h4, h5, h6 { /* New block */
+            font-family: Arial, sans-serif; /* New line */
+            color: #333; /* New line */
+            margin-top: 20px; /* New line */
+            margin-bottom: 10px; /* New line */
+            /* Add additional styling properties as needed */
+        }
+
+        h1 { /* New block */
+            font-size: 24px; /* New line */
+            font-weight: bold; /* New line */
+            text-transform: uppercase; /* New line */
+        }
+
+        h2 { /* New block */
+            font-size: 20px; /* New line */
+            font-weight: bold; /* New line */
+        }
+
+        h3 { /* New block */
+            font-size: 18px; /* New line */
+            font-weight: bold; /* New line */
+        }
+    <!-- Example content with standardized headlines -->
+<section data-testid="stSidebar">
+    <!-- Added the following lines to demonstrate standardized headlines -->
+    <h1>Main Heading</h1> <!-- New line -->
+    <h2>Subheading</h2> <!-- New line -->
+    <h3>Sub-subheading</h3> <!-- New line -->
+    <!-- Add more headlines as needed -->
+</section>
+
+
 }
