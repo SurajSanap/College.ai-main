@@ -11,7 +11,7 @@ from menu.Prompt_Examples import main as prompt_examples_page
 from menu.Resume_Analyser import main as resume_analyser_page
 from menu.User import main as user_page
 
-st.set_page_config("College.ai", page_icon='src/Logo College.png', layout='centered')
+#st.set_page_config("College.ai", page_icon='src/Logo College.png', layout='centered')
 st.markdown('<style>' + open('./src/style.css').read() + '</style>', unsafe_allow_html=True)
 
 def home():
