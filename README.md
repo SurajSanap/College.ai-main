@@ -2,8 +2,7 @@
 
 Welcome to College.ai !! It  is a versatile project that harnesses the power of ChatGPT-4 to provide a range of features. The application includes functionalities such as exploring ChatGPT-4 features, training/uploading PDFs, resume analysis, and more.🎓🤖
 
-![image](https://github.com/SurajSanap/College.ai-main/assets/101057653/91979a2b-f1e8-4f63-8d5d-09399cab2780)
-
+![Collegeai GIF](https://github.com/SurajSanap/College.ai-main/assets/101057653/f5923134-c4c1-4586-975b-3247675bb475)
 
 Tutorial video: https://www.youtube.com/watch?v=K2QHmboTf8o
 
