@@ -2,6 +2,11 @@ import streamlit as st
 
 
 def main():
+    """
+    The main function generates a user interface with prompt examples for summarizing topics, providing
+    contextual explanations, creating Q&A sets, interpreting data, and conducting predictive analysis,
+    with instructions and text areas for user input.
+    """
     # Main title
     st.markdown(
         "<h1 style='text-align: center;'>Prompt Examples</h1>", unsafe_allow_html=True

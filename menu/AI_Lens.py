@@ -13,6 +13,17 @@ load_dotenv()
 
 
 def image_to_byte_array(image: Image) -> bytes:
+    """
+    This function converts an image into a byte array.
+
+    Args:
+      image (Image): The `image` parameter in the `image_to_byte_array` function is expected to be an
+    object of the `Image` class. This object represents an image that you want to convert into a byte
+    array.
+
+    Returns:
+      The function `image_to_byte_array` returns a byte array representation of the input image.
+    """
     imgByteArr = io.BytesIO()
     image.save(imgByteArr, format=image.format)
     imgByteArr = imgByteArr.getvalue()
@@ -24,6 +35,11 @@ genai.configure(api_key=API_KEY)
 
 
 def main():
+    """
+    The `main` function in Python creates a virtual assistant interface with tabs for a ChatBot and Ai
+    Lens functionalities, allowing users to interact with text prompts and images to generate responses
+    using generative models.
+    """
 
     st.write(
         "<h1><center>Virtual Assistant Interface</center></h1>", unsafe_allow_html=True

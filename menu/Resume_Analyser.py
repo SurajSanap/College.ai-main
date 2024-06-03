@@ -22,6 +22,19 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 
 def get_pdf_text(pdf_docs):
+    """
+    The function `get_pdf_text` takes a list of PDF documents, extracts text from each page of the
+    documents, and returns the concatenated text as a single string.
+
+    Args:
+      pdf_docs: It looks like the code snippet you provided is a function named `get_pdf_text` that
+    takes a list of PDF documents as input and extracts text from each page of the PDF documents using
+    the `PdfReader` class. The extracted text is then concatenated and returned as a single string.
+
+    Returns:
+      The function `get_pdf_text` returns the combined text content extracted from all the pages of the
+    PDF documents provided in the `pdf_docs` list.
+    """
     text = ""
     for pdf in pdf_docs:
         pdf_reader = PdfReader(pdf)
@@ -32,18 +45,48 @@ def get_pdf_text(pdf_docs):
 
 
 def get_text_chunks(text):
+    """
+    The function `get_text_chunks` splits a given text into chunks of 1000 characters with a
+    200-character overlap using a RecursiveCharacterTextSplitter.
+
+    Args:
+      text: The `get_text_chunks` function takes a text input and splits it into chunks of 1000
+    characters with an overlap of 200 characters using the `RecursiveCharacterTextSplitter` class. If
+    you provide me with the text input, I can demonstrate how the function works by splitting the text
+    into
+
+    Returns:
+      The function `get_text_chunks` returns a list of text chunks that are split from the input text
+    based on the specified chunk size and overlap.
+    """
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
     chunks = text_splitter.split_text(text)
     return chunks
 
 
 def get_vector_store(text_chunks):
+    """
+    The function `get_vector_store` generates embeddings for text chunks using Google Generative AI
+    Embeddings and saves them in a FAISS index.
+
+    Args:
+      text_chunks: Text chunks are small pieces of text that have been divided or segmented from a
+    larger body of text. These chunks can be individual sentences, paragraphs, or any other division of
+    text that is used for analysis or processing.
+    """
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
     vector_store = FAISS.from_texts(text_chunks, embedding=embeddings)
     vector_store.save_local("faiss_index")
 
 
 def load_vector_store():
+    """
+    The function `load_vector_store` loads a vector store using Google Generative AI embeddings and a
+    FAISS index.
+
+    Returns:
+      A vector store is being returned.
+    """
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
     vector_store = FAISS.load_local(
         "faiss_index", embeddings, allow_dangerous_deserialization=True
@@ -52,6 +95,16 @@ def load_vector_store():
 
 
 async def get_conversational_chain():
+    """
+    This Python function defines an asynchronous function that generates a conversational chain using a
+    prompt template and a chat model to provide answers based on a given context.
+
+    Returns:
+      The `get_conversational_chain` function returns a conversational chain that uses a prompt template
+    to interact with a ChatGoogleGenerativeAI model. The chain is loaded with a specific type ("stuff")
+    and prompt template that includes a context variable for input. The model is set to "gemini-pro"
+    with a temperature of 0.3 for generating responses based on the provided context.
+    """
     prompt_template = """
     You are an Advanced resume Analyzer.
     1. Analyze the resume and give the best 3 job domains relevant to the skills in the given context.
@@ -73,6 +126,16 @@ async def get_conversational_chain():
 
 
 def user_input(user_question):
+    """
+    The function `user_input` takes a user question, performs a similarity search on a vector store,
+    runs an asynchronous function to generate a conversational response, and displays the response.
+
+    Args:
+      user_question: The `user_question` parameter in the `user_input` function is the question or input
+    provided by the user that will be used for similarity search and conversational chain processing.
+    This input will be used to find similar documents in the vector store and generate a response using
+    a conversational chain model.
+    """
     try:
         vector_store = load_vector_store()
         docs = vector_store.similarity_search(user_question)
@@ -91,6 +154,11 @@ def user_input(user_question):
 
 
 def main():
+    """
+    The `main` function in the provided Python code snippet loads an animation from a JSON file, allows
+    users to upload PDF files for processing, and displays additional course videos if the "Process"
+    button is clicked.
+    """
     # Load animation from JSON
 
     st.write("<h1><center>Resume Analyser</center></h1>", unsafe_allow_html=True)

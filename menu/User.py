@@ -27,15 +27,56 @@ client = GoogleOAuth2(client_id=client_id, client_secret=client_secret)
 
 
 async def get_access_token(client: GoogleOAuth2, redirect_url: str, code: str):
+    """
+    The function `get_access_token` asynchronously retrieves an access token from Google OAuth2 using a
+    provided code and redirect URL.
+
+    Args:
+      client (GoogleOAuth2): GoogleOAuth2 instance that handles the OAuth2 authentication with Google
+    APIs.
+      redirect_url (str): The `redirect_url` parameter is the URL to which the user will be redirected
+    after they have granted permission to the application. This URL is typically provided by the
+    application as part of the OAuth2 flow to handle the authorization response.
+      code (str): The `code` parameter is typically a one-time authorization code that is provided by
+    the authorization server as part of the OAuth 2.0 authorization flow. This code is exchanged for an
+    access token that can be used to make authenticated requests to the API on behalf of the user.
+
+    Returns:
+      The `get_access_token` function is returning the result of calling the `client.get_access_token`
+    method with the provided `code` and `redirect_url` parameters.
+    """
     return await client.get_access_token(code, redirect_url)
 
 
 async def get_email(client: GoogleOAuth2, token: str):
+    """
+    The function `get_email` retrieves the user ID and email using a Google OAuth2 client and a token.
+
+    Args:
+      client (GoogleOAuth2): GoogleOAuth2 object that handles authentication and communication with
+    Google APIs.
+      token (str): The `token` parameter is a string that represents the authentication token used to
+    access the Google API. It is passed to the `get_email` function to authenticate the user and
+    retrieve their email address.
+
+    Returns:
+      The function `get_email` is returning a tuple containing the `user_id` and `user_email` obtained
+    from the `client.get_id_email(token)` method.
+    """
     user_id, user_email = await client.get_id_email(token)
     return user_id, user_email
 
 
 def get_logged_in_user_email():
+    """
+    The function `get_logged_in_user_email` attempts to retrieve the logged-in user's email address
+    using OAuth authentication and Firebase authentication.
+
+    Returns:
+      The function `get_logged_in_user_email` is returning the email address of the logged-in user if
+    the user is successfully authenticated and their email is retrieved. If any errors occur during the
+    process, the function returns `None`.
+    """
     try:
         query_params = st.query_params()
         code = query_params.get("code")
@@ -60,6 +101,10 @@ def get_logged_in_user_email():
 
 
 def show_login_button():
+    """
+    The function `show_login_button` generates a button with a link for logging in via Google using the
+    specified authorization URL and styling.
+    """
     authorization_url = asyncio.run(
         client.get_authorization_url(
             redirect_url,
@@ -72,15 +117,37 @@ def show_login_button():
 
 
 def generate_otp():
+    """
+    The function generates a 6-digit one-time password (OTP) using random digits.
+
+    Returns:
+      The function `generate_otp()` is returning a randomly generated 6-digit OTP (One Time Password)
+    consisting of digits 0-9.
+    """
     otp = "".join(random.choices(string.digits, k=6))
     return otp
 
 
 def send_otp(email, otp):
+    """
+    The function `send_otp` takes an email and OTP as input and displays a message indicating that an
+    OTP has been sent to the provided email along with the OTP value.
+
+    Args:
+      email: The `email` parameter is a string that represents the email address to which the OTP
+    (One-Time Password) will be sent.
+      otp: The `otp` parameter in the `send_otp` function is typically a one-time password (OTP) that is
+    generated and sent to the user's email address for verification or authentication purposes. It is a
+    temporary code that is usually used for a single login session or transaction to enhance security.
+    """
     st.write(f"An OTP has been sent to {email}. Your OTP is: {otp}")
 
 
 def main():
+    """
+    The `main` function in the provided Python code snippet implements an authentication portal allowing
+    users to login, sign up, or recover a forgotten password.
+    """
     st.write("<h1><center> Authentication Portal</center></h1>", unsafe_allow_html=True)
 
     if "logged_in" not in st.session_state:

@@ -13,6 +13,12 @@ model = genai.GenerativeModel("gemini-pro")
 
 
 def main():
+    """
+    The main function in the provided Python code snippet creates an Applicant Tracking System (ATS)
+    interface where users can input job roles, job descriptions, and upload resumes for evaluation
+    against the job description using an ATS model, displaying the percentage match, missing keywords in
+    the resume, and a profile summary.
+    """
     st.write(
         "<h1><center>Applicant tracking systems</center></h1>", unsafe_allow_html=True
     )

@@ -20,6 +20,10 @@ from menu.User import main as user_page
 
 
 def home():
+    """
+    The `home()` function in Python displays a welcome message, loads and displays an animation from a
+    JSON file, and includes a link to a tutorial.
+    """
     st.markdown(
         "<h1 style='text-align: center;'>Welcome to College.ai!</h1>",
         unsafe_allow_html=True,
@@ -51,6 +55,10 @@ def home():
 
 
 def main():
+    """
+    The `main` function in the provided Python code sets up a Streamlit app with a customized style and
+    a sidebar containing tabs for different pages, each linked to a specific function.
+    """
 
     st.markdown(
         """
