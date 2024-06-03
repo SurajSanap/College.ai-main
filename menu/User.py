@@ -56,7 +56,7 @@ def show_login_button():
         scope=["email", "profile"],
         extras_params={"access_type": "offline"},
     ))
-    button_html = f'<a href="{authorization_url}" target="_self" style="text-decoration: none;"><button style="background-color: #2F80ED; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; cursor: pointer;">Login via Google</button></a>'
+    button_html = f'<a href="{authorization_url}" target="_self" style="text-decoration: none;"><button style="background-color:#008080; color: white; border: none; padding: 8px 12px; border-radius: 5px; font-size: 12px; cursor: pointer;">Login via Google</button></a>'
     st.markdown(button_html, unsafe_allow_html=True)
 
 def generate_otp():

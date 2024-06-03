@@ -32,7 +32,14 @@ def home():
         st.error(f"An error occurred: {e}")
 
     st.markdown("<div style='text-align: center; margin-top: 20px;'>", unsafe_allow_html=True)
-    st.markdown("<a href='https://devpost.com/software/college-ai-m3o0bx' target='_blank'><button style='color: white; background-color: #4CAF50; border: none; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 12px;'>Tutorial</button></a>", unsafe_allow_html=True)
+    st.markdown("""
+    <a href='https://devpost.com/software/college-ai-m3o0bx' target='_blank'>
+        <button style="background-color:#008080; color: white; border: none; padding: 8px 13px; border-radius: 8px; font-size: 15px; cursor: pointer;">
+            Tutorial
+        </button>
+    </a>
+    """, unsafe_allow_html=True)
+
     st.markdown("</div>", unsafe_allow_html=True)
 
 
@@ -64,9 +71,14 @@ def main():
             .stMarkdown {
                 margin-top: 0px !important;
             }
-                
-        </style>
-        """, unsafe_allow_html=True)
+            
+   
+    /* Target the full page container of Streamlit */
+    .stApp {
+        background-image: linear-gradient(to right,  #ADD8E6, #E6E6FA);
+    }
+    </style>
+""", unsafe_allow_html=True)
     with st.sidebar:
         st.image('src/Logo College.png', width=70)
         tabs = on_hover_tabs(tabName=['Home', 'AI Lens', 'Ask To PDF', 'Resume Analyser', 'ATS', 'Prompt Examples', 'About', 'Account'], 
