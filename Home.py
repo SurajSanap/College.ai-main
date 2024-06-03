@@ -5,9 +5,10 @@ st.markdown(
     "<style>" + open("./src/style.css").read() + "</style>", unsafe_allow_html=True
 )
 
-from streamlit_lottie import st_lottie
-from st_on_hover_tabs import on_hover_tabs
 import json
+
+from st_on_hover_tabs import on_hover_tabs
+from streamlit_lottie import st_lottie
 
 from menu.About import main as about_page
 from menu.AI_Lens import main as ai_lens_page

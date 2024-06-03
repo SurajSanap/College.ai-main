@@ -3,11 +3,11 @@
 
 from __future__ import print_function
 
-import sys
-import json
-import jsonpatch
 import argparse
+import json
+import sys
 
+import jsonpatch
 
 parser = argparse.ArgumentParser(description='Diff two JSON files')
 parser.add_argument('FILE1', type=argparse.FileType('r'))

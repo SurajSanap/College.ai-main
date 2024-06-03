@@ -1,10 +1,11 @@
-import streamlit as st
-import google.generativeai as genai
-import PyPDF2 as pdf
-from dotenv import load_dotenv
-from streamlit_lottie import st_lottie
 import json
 import os
+
+import google.generativeai as genai
+import PyPDF2 as pdf
+import streamlit as st
+from dotenv import load_dotenv
+from streamlit_lottie import st_lottie
 
 load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))

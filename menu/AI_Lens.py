@@ -1,13 +1,13 @@
-import streamlit as st
-import google.generativeai as genai
-import google.ai.generativelanguage as glm
-from dotenv import load_dotenv
-from PIL import Image
-import os
 import io
 import json
-from streamlit_lottie import st_lottie
+import os
 
+import google.ai.generativelanguage as glm
+import google.generativeai as genai
+import streamlit as st
+from dotenv import load_dotenv
+from PIL import Image
+from streamlit_lottie import st_lottie
 
 load_dotenv()
 

@@ -3,12 +3,12 @@
 
 from __future__ import print_function
 
-import sys
-import os.path
-import json
-import jsonpointer
 import argparse
+import json
+import os.path
+import sys
 
+import jsonpointer
 
 parser = argparse.ArgumentParser(
     description='Resolve a JSON pointer on JSON files')

@@ -1,10 +1,11 @@
-import streamlit as st
-import sqlite3
-import random
-import string
 import asyncio
-from httpx_oauth.clients.google import GoogleOAuth2
+import random
+import sqlite3
+import string
+
+import streamlit as st
 from firebase_admin import auth, exceptions
+from httpx_oauth.clients.google import GoogleOAuth2
 
 # Initialize Streamlit title
 st.title("College.ai")
