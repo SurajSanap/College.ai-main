@@ -41,5 +41,3 @@ def main():
 
     # Footer
     st.markdown("<h5 style='text-align: center;'>Keep Learning, Keep Exploring 😉!!</h5>", unsafe_allow_html=True)
-
-
