@@ -47,7 +47,8 @@ Make sure you have the following dependencies installed:
 
 ## 🛠️Installation
 
-1. Clone the repository:
+1. Clone the repository
+First, you need to clone the repository to your local machine. You can do this by using the git clone command followed by the URL of the repository.
 
 ```bash
 git clone <link>
@@ -58,12 +59,57 @@ git clone <link>
 ```bash
 cd <filename>
 ```
+3. Create a new branch
+It's a good practice to create a new branch for your changes. You can create a new branch with the git branch command and switch to it with the git checkout command.
+
+```bash
+git branch my-branch
+git checkout my-branch
+```
+Or you can use the git checkout command with the -b flag to create and switch to the new branch in one step.
+```bash
+git checkout -b my-branch
+```
+4. Make changes
+Now you can make changes to the files in the repository. You can use any text editor or IDE to do this.
+
+5. Stage the changes
+Once you've made your changes, you need to stage them with the git add command.
+```bash
+git add.
+```
+The . adds all changes, but you can also specify individual files.
+
+6. Commit the changes
+After staging your changes, you need to commit them with the git commit command.
+```bash
+git commit -m "Commit message"
+```
+The -m flag allows you to write a commit message that describes the changes you made.
+
+7. Push the changes
+Now you can push your changes to the remote repository with the git push command.
+```bash
+git push origin my-branch
+```
+8. Create a pull request
+Finally, you can create a pull request on the GitHub website. This will allow the repository owner to review your changes and decide whether to merge them into the main branch.
+
+
+
+
+
+
+
+
+
 
 ##Install requirements:
 
 ```bash
 pip install -r requirements.txt
 ```
+
 
 ## Getting Started
 
