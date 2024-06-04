@@ -4,7 +4,7 @@ Welcome to College.ai !! It  is a versatile project that harnesses the power of 
 
 ![Collegeai GIF](https://github.com/SurajSanap/College.ai-main/assets/101057653/f5923134-c4c1-4586-975b-3247675bb475)
 
-Tutorial video: https://www.youtube.com/watch?v=K2QHmboTf8o
+https://youtu.be/K2QHmboTf8o?si=42LbPMeTPQYCDgNX
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -43,11 +43,7 @@ Make sure you have the following dependencies installed:
 - [poppler-utils](https://poppler.freedesktop.org/)
 - [streamlit_lottie](https://github.com/okld/streamlit-lottie)
 
-Can install them using the following:
 
-```bash
-pip install -r requirements.txt
-```
 
 ## 🛠️Installation
 
@@ -61,6 +57,12 @@ git clone <link>
 
 ```bash
 cd <filename>
+```
+
+##Install requirements:
+
+```bash
+pip install -r requirements.txt
 ```
 
 ## Getting Started
