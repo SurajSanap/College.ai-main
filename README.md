@@ -96,14 +96,6 @@ git push origin my-branch
 Finally, you can create a pull request on the GitHub website. This will allow the repository owner to review your changes and decide whether to merge them into the main branch.
 
 
-
-
-
-
-
-
-
-
 ##Install requirements:
 
 ```bash
