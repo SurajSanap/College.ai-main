@@ -1,0 +1,11 @@
+# .streamlit/config.toml
+
+[theme]
+base="light"
+primaryColor="#c19ad9"
+backgroundColor="white"
+secondaryBackgroundColor="#c98bdb"
+textColor="black"
+
+# The dark theme configuration can be added here but will not be used initially
+# It will be dynamically switched from the code

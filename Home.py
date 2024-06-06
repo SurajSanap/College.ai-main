@@ -1,11 +1,18 @@
+import json
+
 import streamlit as st
 
-st.set_page_config("College.ai", page_icon="src/Logo College.png", layout="centered")
+st.set_page_config(
+    page_title="College.ai",
+    page_icon="src/Logo College.png",
+    layout="centered",
+    initial_sidebar_state="auto",
+)
+
+# Load CSS file
 st.markdown(
     "<style>" + open("./src/style.css").read() + "</style>", unsafe_allow_html=True
 )
-
-import json
 
 from st_on_hover_tabs import on_hover_tabs
 from streamlit_lottie import st_lottie
@@ -18,7 +25,54 @@ from menu.Prompt_Examples import main as prompt_examples_page
 from menu.Resume_Analyser import main as resume_analyser_page
 from menu.User import main as user_page
 
+# Initialize session state for theme
+if "current_theme" not in st.session_state:
+    st.session_state.current_theme = "light"
 
+themes = {
+    "light": {
+        "base": "light",
+        "backgroundColor": "white",
+        "primaryColor": "#c19ad9",
+        "secondaryBackgroundColor": "#c98bdb",
+        "textColor": "black",
+        "button_face": "🌞",
+    },
+    "dark": {
+        "base": "dark",
+        "backgroundColor": "black",
+        "primaryColor": "#c98bdb",
+        "secondaryBackgroundColor": "#c98bdb",
+        "textColor": "white",
+        "button_face": "🌜",
+    },
+}
+
+
+# Change theme function
+def change_theme():
+    current_theme = st.session_state.current_theme
+    new_theme = "dark" if current_theme == "light" else "light"
+    st.session_state.current_theme = new_theme
+
+
+# Display theme change button
+btn_face = themes[st.session_state.current_theme]["button_face"]
+if st.button(btn_face):
+    change_theme()
+
+
+# Apply theme changes
+def apply_theme():
+    theme_settings = themes[st.session_state.current_theme]
+    for key, value in theme_settings.items():
+        st._config.set_option(f"theme.{key}", value)
+
+
+apply_theme()
+
+
+# Home Page Function
 def home():
     st.markdown(
         "<h1 style='text-align: center;'>Welcome to College.ai!</h1>",
@@ -50,40 +104,21 @@ def home():
     st.markdown("</div>", unsafe_allow_html=True)
 
 
+# Main Function
 def main():
-
     st.markdown(
         """
         <style>
-            /* Target the root container and reduce its padding */
-            .css-1y0tads {
+            /* Reduce padding for the entire page */
+            .css-1y0tads, .block-container, .css-1lcbmhc {
                 padding-top: 0px !important;
                 padding-bottom: 0px !important;
             }
-            
-            /* Further reduce padding within the main block container */
-            .block-container {
-                padding-top: 0px !important;
-                margin-top: 0px !important;
-                padding-bottom: 0px !important;
-                margin-bottom: 0px !important;
-            }
-
-            /* Reduce space around the main area */
-            .css-1lcbmhc {
-                padding-top: 0px !important;
-                padding-bottom: 0px !important;
-            }
-
-            /* Adjust Streamlit markdown blocks to reduce top margin */
-            .stMarkdown {
-                margin-top: 0px !important;
-            }
-                
         </style>
-        """,
+    """,
         unsafe_allow_html=True,
     )
+
     with st.sidebar:
         st.image("src/Logo College.png", width=70)
         tabs = on_hover_tabs(
