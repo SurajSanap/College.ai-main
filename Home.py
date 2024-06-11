@@ -1,7 +1,7 @@
 import streamlit as st
 import json
 
-st.set_page_config(page_title="College.ai", page_icon='src/Logo College.png', layout='wide', initial_sidebar_state="expanded")
+st.set_page_config(page_title="College.ai", page_icon='src/Logo College.png', layout='centered', initial_sidebar_state="auto")
 
 # Load CSS file
 st.markdown('<style>' + open('./src/style.css').read() + '</style>', unsafe_allow_html=True)
@@ -46,6 +46,11 @@ def change_theme():
     new_theme = "dark" if current_theme == "light" else "light"
     st.session_state.current_theme = new_theme
 
+# Display theme change button
+btn_face = themes[st.session_state.current_theme]["button_face"]
+if st.button(btn_face):
+    change_theme()
+
 # Apply theme changes
 def apply_theme():
     theme_settings = themes[st.session_state.current_theme]
@@ -72,6 +77,7 @@ def home():
 
     st.markdown("<div style='text-align: center; margin-top: 20px;'>", unsafe_allow_html=True)
     st.markdown("<a href='https://devpost.com/software/college-ai-m3o0bx' target='_blank'><button style='color: white; background-color: #4CAF50; border: none; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 12px;'>Tutorial</button></a>", unsafe_allow_html=True)
+    st.markdown("</div>", unsafe_allow_html=True)
 
 # Main Function
 def main():
@@ -82,19 +88,11 @@ def main():
                 padding-top: 0px !important;
                 padding-bottom: 0px !important;
             }
-
-            
         </style>
     """, unsafe_allow_html=True)
     
     with st.sidebar:
-        # Display theme change button within the sidebar
         st.image('src/Logo College.png', width=70)
-       
-        btn_face = themes[st.session_state.current_theme]["button_face"]
-        if st.button(btn_face):
-            change_theme()
-       
         tabs = on_hover_tabs(
             tabName=['Home', 'AI Lens', 'Ask To PDF', 'Resume Analyser', 'ATS', 'Prompt Examples', 'About', 'Account'], 
             iconName=['home', 'center_focus_weak', 'search', 'article', 'work', 'edit', 'info', 'account_circle'], 
