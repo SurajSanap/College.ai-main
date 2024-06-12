@@ -27,16 +27,14 @@ themes = {
         "backgroundColor": "white",
         "primaryColor": "#c19ad9",
         "secondaryBackgroundColor": "#c98bdb",
-        "textColor": "black",
-        "button_face": "🌞"
+        "textColor": "black"
     },
     "dark": {
         "base": "dark",
         "backgroundColor": "black",
         "primaryColor": "#c98bdb",
         "secondaryBackgroundColor": "#c98bdb",
-        "textColor": "white",
-        "button_face": "🌜"
+        "textColor": "white"
     }
 }
 
@@ -45,14 +43,13 @@ def change_theme():
     current_theme = st.session_state.current_theme
     new_theme = "dark" if current_theme == "light" else "light"
     st.session_state.current_theme = new_theme
+    apply_theme()
 
 # Apply theme changes
 def apply_theme():
     theme_settings = themes[st.session_state.current_theme]
     for key, value in theme_settings.items():
         st._config.set_option(f'theme.{key}', value)
-
-apply_theme()
 
 # Home Page Function
 def home():
@@ -82,8 +79,6 @@ def main():
                 padding-top: 0px !important;
                 padding-bottom: 0px !important;
             }
-
-            
         </style>
     """, unsafe_allow_html=True)
     
@@ -91,10 +86,10 @@ def main():
         # Display theme change button within the sidebar
         st.image('src/Logo College.png', width=70)
        
-        btn_face = themes[st.session_state.current_theme]["button_face"]
+        btn_face = "🌞" if st.session_state.current_theme == "light" else "🌜"
         if st.button(btn_face):
             change_theme()
-       
+        apply_theme()
         tabs = on_hover_tabs(
             tabName=['Home', 'AI Lens', 'Ask To PDF', 'Resume Analyser', 'ATS', 'Prompt Examples', 'About', 'Account'], 
             iconName=['home', 'center_focus_weak', 'search', 'article', 'work', 'edit', 'info', 'account_circle'], 
