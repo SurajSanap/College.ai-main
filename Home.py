@@ -25,16 +25,16 @@ themes = {
     "light": {
         "base": "light",
         "backgroundColor": "white",
-        "primaryColor": "#c19ad9",
-        "secondaryBackgroundColor": "#c98bdb",
-        "textColor": "black",
+        "primaryColor": "#0000ff",
+        "secondaryBackgroundColor": "#f5fefd",
+        "textColor": "#262730",
         "button_face": "🌞"
     },
     "dark": {
         "base": "dark",
         "backgroundColor": "black",
-        "primaryColor": "#c98bdb",
-        "secondaryBackgroundColor": "#c98bdb",
+        "primaryColor": "#0000ff",
+        "secondaryBackgroundColor": "#262730",
         "textColor": "white",
         "button_face": "🌜"
     }

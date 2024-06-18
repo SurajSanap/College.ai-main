@@ -50,11 +50,11 @@ def main():
     col1, col2, col3 = st.columns([1,1,1])
     
     with col1:
-        st.link_button('GitHub', "https://github.com/SurajSanap")
+        st.link_button('GitHub', "https://github.com/SurajSanap",type="primary")
     with col2:
-        st.link_button('LinkedIn', "https://www.linkedin.com/in/surajsanap01")
+        st.link_button('LinkedIn', "https://www.linkedin.com/in/surajsanap01", type="primary")
     with col3:
-        if st.button('Thankyou'):
+        if st.button('Thankyou', type="primary"):
             try:
                 show_thank_you_emoji()
             except:

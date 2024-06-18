@@ -17,10 +17,10 @@ def main():
         animation = json.load(anim_source)
     st_lottie(animation, 1, True, True, "high", 200, -200)
 
-    st.text_input("Job Role")
-    desc = st.text_area("Paste the Job Description")
+    st.text_input("Job Role", placeholder="Eg. Software Engineer, Data Scientist", label_visibility="visible")
+    desc = st.text_area("Paste the Job Description", placeholder="Write 100-200 words in description", label_visibility="visible")
     uploaded_file = st.file_uploader("Upload Your Resume", type="pdf", help="Pls Upload PDF file Only")
-    submit = st.button("Submit")
+    submit = st.button("Submit",type="primary")
 
     if submit:
         if uploaded_file is not None:

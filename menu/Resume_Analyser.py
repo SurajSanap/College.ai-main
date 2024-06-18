@@ -104,7 +104,7 @@ def main():
 
     pdf_docs = st.file_uploader("Upload your PDF Files and Click on the Submit & Process Button", accept_multiple_files=True)
 
-    if st.button("Process"):
+    if st.button("Process",type="primary"):
         if pdf_docs:
             with st.spinner("Analysing..."):
                 try:

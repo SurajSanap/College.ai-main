@@ -109,9 +109,9 @@ def main():
     if 'prompt_selected' not in st.session_state:
         st.session_state.prompt_selected = ""
 
-    pdf_docs = st.file_uploader("Upload your PDF Files and Click on the Submit & Process Button", accept_multiple_files=True)
+    pdf_docs = st.file_uploader("Upload your PDF Files and Click on the Submit & Process Button", type="secondary", accept_multiple_files=True)
 
-    if st.button("Train & Process"):
+    if st.button("Train & Process", type="primary"):
         if pdf_docs:
             with st.spinner("🤖Processing..."):
                 raw_text = get_pdf_text(pdf_docs)
@@ -121,8 +121,8 @@ def main():
 
     
 
-    user_question = st.text_input("Ask a Question from the PDF Files")
-    enter_button = st.button('Enter')
+    user_question = st.text_input("Ask a Question from the PDF Files",placeholder="Write a Question", label_visibility="visible")
+    enter_button = st.button('Enter', type="primary")
 
     if enter_button or st.session_state.prompt_selected:
         if st.session_state.prompt_selected:

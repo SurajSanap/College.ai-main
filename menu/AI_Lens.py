@@ -36,10 +36,10 @@ def main():
             animation = json.load(anim_source)
             st_lottie(animation, 1, True, True, "high", 200, -200)
 
-        prompt = st.text_input("prompt please...", placeholder="Prompt", label_visibility="visible")
+        prompt = st.text_input("prompt please...",placeholder="Prompt", label_visibility="visible")
         model = genai.GenerativeModel("gemini-pro")
 
-        if st.button("SEND",use_container_width=True):
+        if st.button("SEND",type="primary", use_container_width=True):
             response = model.generate_content(prompt)
 
             st.write("")
@@ -69,7 +69,7 @@ def main():
                 </style>
                 """, unsafe_allow_html=True)
             
-        if st.button("GET RESPONSE", use_container_width=True):
+        if st.button("GET RESPONSE",type="primary", use_container_width=True):
             model = genai.GenerativeModel("gemini-pro-vision")
 
             if uploaded_file is not None:

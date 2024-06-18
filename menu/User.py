@@ -76,10 +76,10 @@ def main():
             form = st.form(key="login_form")
             form.subheader("Login")
 
-            user = form.text_input("Username")
+            user = form.text_input("Username", placeholder="Eg. abc@82", label_visibility="visible")
             password = form.text_input("Password", type="password")
 
-            if form.form_submit_button("Login"):
+            if form.form_submit_button("Login", type="primary"):
                 c.execute("SELECT * FROM users WHERE username=? AND password=?", (user, password))
                 result = c.fetchone()
                 if result:
@@ -128,7 +128,7 @@ def main():
         st.subheader("Logged in")
         st.write("You are logged in as:", st.session_state["user"])
 
-        if st.button("Logout"):
+        if st.button("Logout",type="primary"):
             del st.session_state["logged_in"]
             del st.session_state["user"]
             st.success("Logged out successfully!")
