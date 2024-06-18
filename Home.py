@@ -108,7 +108,6 @@ def main():
                                        'tabStyle' : {'list-style-type': 'none',
                                                      'margin-bottom': '30px',
                                                      'padding-left': '30px'}}
-            default_choice=0
         )
 
     menu = {
