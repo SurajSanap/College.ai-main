@@ -1,9 +1,8 @@
 section[data-testid='stSidebar'] {
-    background-color: #16161D;
-    height: 100%;
+    background-color: #111;
     flex-shrink: unset !important;
-    border-radius: 0px 5px 5px 0px;
-    }
+    
+}
 
 @media(hover:hover) and (min-width: 600px) and (max-width: 769px){
 
@@ -20,7 +19,7 @@ section[data-testid='stSidebar'] {
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: #16161D;
+        background-color: #111;
         overflow-x: hidden;
         transition: 0.5s ease;
         padding-top: 60px;
@@ -56,7 +55,7 @@ section[data-testid='stSidebar'] {
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: #16161D;
+        background-color: #111;
         overflow-x: hidden;
         transition: 0.5s ease;
         padding-top: 60px;

@@ -136,7 +136,7 @@ If you'd like to contribute to College.ai, please follow these steps:
 Note: Make sure you always create a updated PR.
 
 
-#### Contibuting Guidelines 
+#### contribution Guidelines 
   We believe in the power of collaboration. If you have ideas to improve College.ai, feel free to contribute! Check out our [Contribution Guidelines]https://github.com/SurajSanap/College.ai-main/blob/main/CONTRIBUTION.md to get started.
 
 ### 📄 Documentation
