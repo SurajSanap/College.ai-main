@@ -206,14 +206,19 @@ def main():
         padding: 8px;
     }
     th {
-        background-color: #CF96DF;
+        background-color: #cf96df;
         color: white;
     }
     tr:nth-child(even) {
         background-color: #f9f9f9;
+                color: #000;
+    }
+    tr:nth-child(odd) {
+        background-color: #f9f9f9;
+                color: #000;
     }
     tr:hover {
-        background-color: #f1f1f1;
+        background-color: #cf96df;
     }
     a {
         text-decoration: none;
