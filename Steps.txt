@@ -10,8 +10,8 @@ Process_Flow
 #Text is 1. extracted from PDFs,
          2. split into chunks, and 
          3. converted into vectors.
-
          4. chain processes user input, 
+         --- Input to model
          5. searches for similar text chunks,
          6. generates responses.
 
