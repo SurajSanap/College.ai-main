@@ -101,11 +101,9 @@ def main():
     ]
     
 
-    
-    
-    st.write("<h1><center>College.ai Contributors</center></h1>", unsafe_allow_html=True)
-    st.write("<h1><center>A big thank you to all the contributors who made this project possible!</center></h1>", unsafe_allow_html=True)
-    
+    st.markdown("<h1 style='text-align: center;'>College.ai Contributors</h1>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center;'>A big thank you to all the contributors who made this project possible!</h2>", unsafe_allow_html=True)
+
     # Display contributors in a grid
     cols = st.columns(4)  # Adjust number of columns as per design preference
     for index, contributor in enumerate(contributors):
