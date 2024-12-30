@@ -103,8 +103,8 @@ def main():
 
     
     
-    st.title("<h1><center>College.ai Contributors</center></h1>", unsafe_allow_html=True)
-    st.write("A big thank you to all the contributors who made this project possible!")
+    st.write("<h1><center>College.ai Contributors</center></h1>", unsafe_allow_html=True)
+    st.write("<h1><center>A big thank you to all the contributors who made this project possible!</center></h1>", unsafe_allow_html=True)
     
     # Display contributors in a grid
     cols = st.columns(4)  # Adjust number of columns as per design preference
