@@ -76,6 +76,9 @@ def main():
     Ask_To_PDF()
     ATS()
     ResumeAnalyzer()
+
+    st.markdown(" ")
+    st.divider()
     
     # Contributor data
     contributors = [
