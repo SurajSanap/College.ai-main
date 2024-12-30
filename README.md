@@ -6,9 +6,6 @@ Welcome to College.ai ! It  is a versatile project that harnesses the power of G
 
 https://youtu.be/K2QHmboTf8o?si=42LbPMeTPQYCDgNX
 
-
-[![All Contributors](https://img.shields.io/github/all-contributors/SurajSanap/College.ai-main?color=ee8449&style=flat-square)](#contributors)
-
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#Features)
@@ -157,21 +154,15 @@ This project is licensed under the [MIT License](LICENSE). Feel free to use, mod
 
 ### 🌟 Join Us 
 
+<a href="https://github.com/SurajSanap/College.ai-main/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=SurajSanap/College.ai-main" />
+</a>
+
 Ready to embark on a journey of collaborative learning? Join College.ai now and be a part of a community that believes in the power of collaboration!
 Thank you for contributing to our open-source project! We appreciate your support 🚀
 Don't forget to leave a star ⭐
 Happy Coding!!❤️
 
-## Contributors
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 
 <p align="right">{<a href="#top">Back to top</a>}</p>
