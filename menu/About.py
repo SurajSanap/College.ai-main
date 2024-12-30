@@ -77,7 +77,6 @@ def main():
     ATS()
     ResumeAnalyzer()
 
-    st.markdown(" ")
     st.divider()
     
     # Contributor data
@@ -104,7 +103,7 @@ def main():
 
     
     
-    st.title("College.ai Contributors")
+    st.title("<h1><center>College.ai Contributors</center></h1>", unsafe_allow_html=True)
     st.write("A big thank you to all the contributors who made this project possible!")
     
     # Display contributors in a grid
