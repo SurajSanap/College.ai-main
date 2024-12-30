@@ -76,42 +76,42 @@ def main():
     Ask_To_PDF()
     ATS()
     ResumeAnalyzer()
-
-# Contributor data
-contributors = [
-    {"name": "SurajSanap"},
-    {"name": "Shraman-jain"},
-    {"name": "lassmara"},
-    {"name": "DiptiSanap"},
-    {"name": "arpy8"},
-    {"name": "asrithaMulugoju"},
-    {"name": "Saumya-28"},
-    {"name": "GUNJESH843"},
-    {"name": "PDBharadwaj"},
-    {"name": "aasthakourav20"},
-    {"name": "debangi29"},
-    {"name": "Santhosh-Siddhardha"},
-    {"name": "Shweta-281"},
-    {"name": "Harleen-786"},
-    {"name": "SDprogramer"},
-    {"name": "arjundontflex"},
-    {"name": "zeelshah1805"},
-]
-
-
-
-st.title("🎉 Contributors 🎉")
-st.write("A big thank you to all the contributors who made this project possible!")
-
-# Display contributors in a grid
-cols = st.columns(4)  # Adjust number of columns as per design preference
-for index, contributor in enumerate(contributors):
-    with cols[index % 4]:
-        profile_pic_url = f"https://github.com/{contributor['name']}.png"
-        profile_url = f"https://github.com/{contributor['name']}"
-        st.image(profile_pic_url, width=100)
-        st.markdown(f"[{contributor['name']}]({profile_url})", unsafe_allow_html=True)
     
+    # Contributor data
+    contributors = [
+        {"name": "SurajSanap"},
+        {"name": "Shraman-jain"},
+        {"name": "lassmara"},
+        {"name": "DiptiSanap"},
+        {"name": "arpy8"},
+        {"name": "asrithaMulugoju"},
+        {"name": "Saumya-28"},
+        {"name": "GUNJESH843"},
+        {"name": "PDBharadwaj"},
+        {"name": "aasthakourav20"},
+        {"name": "debangi29"},
+        {"name": "Santhosh-Siddhardha"},
+        {"name": "Shweta-281"},
+        {"name": "Harleen-786"},
+        {"name": "SDprogramer"},
+        {"name": "arjundontflex"},
+        {"name": "zeelshah1805"},
+    ]
+    
+    
+    
+    st.title("🎉 Contributors 🎉")
+    st.write("A big thank you to all the contributors who made this project possible!")
+    
+    # Display contributors in a grid
+    cols = st.columns(4)  # Adjust number of columns as per design preference
+    for index, contributor in enumerate(contributors):
+        with cols[index % 4]:
+            profile_pic_url = f"https://github.com/{contributor['name']}.png"
+            profile_url = f"https://github.com/{contributor['name']}"
+            st.image(profile_pic_url, width=100)
+            st.markdown(f"[{contributor['name']}]({profile_url})", unsafe_allow_html=True)
+        
     
 if __name__=="__main__":
     main()
