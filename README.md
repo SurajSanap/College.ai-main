@@ -6,6 +6,9 @@ Welcome to College.ai ! It  is a versatile project that harnesses the power of G
 
 https://youtu.be/K2QHmboTf8o?si=42LbPMeTPQYCDgNX
 
+
+[![All Contributors](https://img.shields.io/github/all-contributors/SurajSanap/College.ai-main?color=ee8449&style=flat-square)](#contributors)
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#Features)
