@@ -98,9 +98,10 @@ def main():
         {"name": "zeelshah1805"},
     ]
     
+
     
     
-    st.title("🎉 Contributors 🎉")
+    st.title("College.ai Contributors")
     st.write("A big thank you to all the contributors who made this project possible!")
     
     # Display contributors in a grid
