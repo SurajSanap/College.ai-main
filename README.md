@@ -143,6 +143,17 @@ Note: Make sure you always create a updated PR.
 #### Contribution Guidelines 
   We believe in the power of collaboration. If you have ideas to improve College.ai, feel free to contribute! Check out our [Contribution Guidelines]https://github.com/SurajSanap/College.ai-main/blob/main/CONTRIBUTION.md to get started.
 
+  ## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
 ### 📄 Documentation
 
 Explore our comprehensive documentation in the [LEARN.md]https://github.com/SurajSanap/College.ai-main/blob/main/Learn.md file, which serves as a detailed guide to understanding and contributing to College.ai. This document covers various aspects of the project, including setup instructions, architecture overview, and contribution guidelines. We recommend referring to this documentation to gain a deeper insight into UniCollab and make meaningful contributions to its development.
