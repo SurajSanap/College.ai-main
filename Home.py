@@ -110,7 +110,7 @@ def main():
         # apply_theme() -> Not required
         tabs = on_hover_tabs(
             tabName=['Home', 'AI Lens', 'Ask To PDF', 'Resume Analyser', 'ATS','Contest Calendar','Job Tracker','Projects', 'Prompt Examples','AI Interview', 'About', 'Account'], 
-            iconName=['home', 'center_focus_weak', 'search', 'article', 'work','calendar_month','work_outline','work_outline', 'edit', 'support_agent' 'info', 'account_circle'],  
+            iconName=['home', 'center_focus_weak', 'search', 'article', 'work','calendar_month','work_outline','work_outline', 'edit', 'support_agent','info', 'account_circle'],  
             default_choice=0
         )
 
