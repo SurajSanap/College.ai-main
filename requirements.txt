@@ -27,14 +27,9 @@ httpx-oauth
 firebase-admin
 streamlit-authenticator
 
-openai
-gtts
-threading
+gTTS
+speechrecognition
 langdetect
 googletrans
-dotenv
-os
-time
-json
-tempfile
-PyAudio
+openai
+Pillow
