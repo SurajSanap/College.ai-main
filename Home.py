@@ -19,6 +19,8 @@ from menu.User import main as user_page
 from menu.Contest_Calendar import main as contest_calendar
 from menu.Projects import main as projects_page
 from menu.Job_Tracker import main as job_tracker
+from menu.AI_Interview import main as ai_interview_page
+
 
 # Initialize session state for theme
 if "current_theme" not in st.session_state:
@@ -107,8 +109,8 @@ def main():
             change_theme()
         # apply_theme() -> Not required
         tabs = on_hover_tabs(
-            tabName=['Home', 'AI Lens', 'Ask To PDF', 'Resume Analyser', 'ATS','Contest Calendar','Job Tracker','Projects', 'Prompt Examples', 'About', 'Account'], 
-            iconName=['home', 'center_focus_weak', 'search', 'article', 'work','calendar_month','work_outline','work_outline', 'edit', 'info', 'account_circle'],  
+            tabName=['Home', 'AI Lens', 'Ask To PDF', 'Resume Analyser', 'ATS','Contest Calendar','Job Tracker','Projects', 'Prompt Examples','AI Interview', 'About', 'Account'], 
+            iconName=['home', 'center_focus_weak', 'search', 'article', 'work','calendar_month','work_outline','work_outline', 'edit', 'support_agent','info', 'account_circle'],  
             default_choice=0
         )
 
@@ -122,6 +124,7 @@ def main():
         'Job Tracker':job_tracker,
         'Projects': projects_page,
         'Prompt Examples': prompt_examples_page,
+        'AI Interview' : ai_interview_page,
         'About': about_page,
         'Account': user_page,
     }
