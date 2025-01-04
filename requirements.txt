@@ -26,3 +26,16 @@ streamlit-on-Hover-tabs
 httpx-oauth
 firebase-admin
 streamlit-authenticator
+
+openai
+gtts
+SpeechRecognition
+threading
+langdetect
+googletrans
+dotenv
+os
+time
+json
+tempfile
+
