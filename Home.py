@@ -134,7 +134,7 @@ def main():
     # Footer
    
 
-    st.markdown("<p style='text-align: center; color: #D3D3D3;'>- ©️Suraj Sanap Project 2024 -</p>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; color: #D3D3D3;'>- ©️Suraj Sanap Project 2025 -</p>", unsafe_allow_html=True)
 
     
 
