@@ -29,7 +29,6 @@ streamlit-authenticator
 
 openai
 gtts
-SpeechRecognition
 threading
 langdetect
 googletrans
