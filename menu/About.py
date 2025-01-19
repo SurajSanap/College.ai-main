@@ -48,7 +48,7 @@ def main():
 
     st.write("""
     Hi! I'm 
-            <p style="font-size: 24px; font-weight: bold;">
+            <p style="font-size: 40px; font-weight: bold;">
             <span style="color: orange;">Suraj Sanap,</span>
             </p>
             A passionate developer with expertise in **AI**, **Machine Learning**, and building web applications. 
