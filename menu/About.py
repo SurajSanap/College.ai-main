@@ -91,11 +91,6 @@ def main():
             unsafe_allow_html=True,
         )
     
-    # My Projects Section
-    st.header("My Projects")
-    
-    st.divider()
-
 
     st.header('', divider='rainbow')
     #st.header('_Streamlit_ is :blue[cool] :sunglasses:')
