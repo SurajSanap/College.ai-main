@@ -20,7 +20,7 @@ load_dotenv()
 # Function to Load and Display Animation
 def load_animation():
     try:
-        with open('src/Teacher1.json', encoding='utf-8') as anim_source:
+        with open('src/Ai_interview.json', encoding='utf-8') as anim_source:
             animation_data = json.load(anim_source)
             st_lottie(animation_data, height=200, key="animation")
     except FileNotFoundError:
