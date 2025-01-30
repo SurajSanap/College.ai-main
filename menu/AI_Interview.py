@@ -29,23 +29,6 @@ def load_animation():
         st.error(f"An unexpected error occurred: {e}")
 
 
-    try:
-        with open('src/Ai_interview.json', encoding='utf-8') as anim_source:
-            animation_data = json.load(anim_source)
-            st_lottie(animation_data, height=200, key="animation")
-    except FileNotFoundError:
-        st.error("Animation file not found. Please check the file path.")
-    except Exception as e:
-        st.error(f"An unexpected error occurred: {e}")
-
-    try:
-        with open('src/Ai_interview.json', encoding='utf-8') as anim_source:
-            animation_data = json.load(anim_source)
-            st_lottie(animation_data, height=200, key="animation")
-    except FileNotFoundError:
-        st.error("Animation file not found. Please check the file path.")
-    except Exception as e:
-        st.error(f"An unexpected error occurred: {e}")
 
 # Function to Recognize Speech
 def recognize_speech():
