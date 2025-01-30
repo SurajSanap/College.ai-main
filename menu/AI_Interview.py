@@ -34,7 +34,7 @@ def main():
     load_dotenv()
 
     # Streamlit app setup
-    st.title("Sensei: Voice Assistant")
+    st.title("AI Interview")
     st.write("<p style='text-align: center;'>Powered by OpenAi</p>", unsafe_allow_html=True)
 
     # API Key Setup moved from the sidebar to the main page
@@ -87,9 +87,10 @@ def main():
                 model="gpt-3.5-turbo",
                 messages=[ 
                     {"role": "system", "content": (
-                        "You are a bilingual assistant. You can communicate in both English and Japanese. "
-                        "Your expertise includes grammar, vocabulary, Kanji, conversational skills, and cultural insights. "
-                        "When responding, use a mix of English and Japanese where appropriate, depending on the user's input."
+                        "You are an insightful and professional interviewer with a keen ability to engage guests in meaningful conversations.
+                        Your goal is to ask thought-provoking, relevant, and well-structured questions that encourage deep discussion. 
+                        You adapt your tone and style based on the interviewee's background, ensuring a smooth and engaging dialogue. Keep the conversation dynamic, 
+                        ask thoughtful follow-ups, and maintain a professional yet personable approach"
                     )},
                     {"role": "user", "content": translated_question},
                 ]
