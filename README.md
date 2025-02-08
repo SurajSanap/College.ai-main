@@ -10,6 +10,7 @@ College.ai is an advanced AI-powered platform that leverages **OpenAI's ChatGPT*
 
 [Watch College.ai Demo](https://youtu.be/K2QHmboTf8o?si=42LbPMeTPQYCDgNX)
 
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
@@ -19,6 +20,12 @@ College.ai is an advanced AI-powered platform that leverages **OpenAI's ChatGPT*
 - [Folder Structure](#folder-structure)
 - [Contributing](#contributing)
 - [License](#license)
+
+  
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ae9f4fbc-263c-4989-8a78-27290b10e231" alt="Logo College" width="150">
+</p>
 
 ## Features
 
@@ -85,9 +92,6 @@ Run the application:
 ```bash
 streamlit run app.py
 ```
-
-
-![transparent_tech_flowchart](https://github.com/user-attachments/assets/f97ca3c2-fb30-45b2-94d1-19538cd45344)
 
 
 ## Contribution
