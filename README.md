@@ -86,6 +86,10 @@ Run the application:
 streamlit run app.py
 ```
 
+
+![transparent_tech_flowchart](https://github.com/user-attachments/assets/f97ca3c2-fb30-45b2-94d1-19538cd45344)
+
+
 ## Contribution
 
 If you'd like to contribute to College.ai, please follow these steps:
