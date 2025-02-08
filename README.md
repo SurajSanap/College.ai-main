@@ -22,11 +22,6 @@ College.ai is an advanced AI-powered platform that leverages **OpenAI's ChatGPT*
 - [License](#license)
 
   
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/ae9f4fbc-263c-4989-8a78-27290b10e231" alt="Logo College" width="150">
-</p>
-
 ## Features
 
 ### AI Interview (New in Version 2)
@@ -71,6 +66,11 @@ Provides structured examples for **prompt engineering**, guiding users on how to
 - **Databases:** SQLite for user and job tracking data
 - **Text Processing:** LangChain, PyPDF2 for PDF parsing
 - **Speech Processing:** gTTS for text-to-speech, SpeechRecognition for voice input
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ae9f4fbc-263c-4989-8a78-27290b10e231" alt="Logo College" width="200">
+</p>
+
 
 ## Installation
 
