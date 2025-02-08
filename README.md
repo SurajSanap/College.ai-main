@@ -1,5 +1,6 @@
-<img src="https://github.com/user-attachments/assets/93d7b577-f653-4507-9b9e-3dcb04114c44" alt="Logo College" width="150" height="150">
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/93d7b577-f653-4507-9b9e-3dcb04114c44" alt="Logo College" width="150">
+</p>
 
 # College.ai
 
