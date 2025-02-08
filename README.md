@@ -1,3 +1,6 @@
+![Logo College](https://github.com/user-attachments/assets/93d7b577-f653-4507-9b9e-3dcb04114c44)
+
+
 # College.ai
 
 College.ai is an advanced AI-powered platform that leverages **OpenAI's ChatGPT** and **Google Gemini** to provide a comprehensive set of tools for students, job seekers, and professionals. This project offers a range of functionalities, including AI-driven resume analysis, applicant tracking, contest tracking, and AI-powered document search.
