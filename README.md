@@ -116,7 +116,7 @@ If you'd like to contribute to College.ai, please follow these steps:
     <tr>
         <td><img src="https://user-images.githubusercontent.com/63473496/213306279-338f7ce9-9a9f-4427-8c2a-3e344874498f.png#gh-dark-mode-only" width="200" height="auto" loading="lazy" alt="GSSoC Ext 24"/></td>
         <td>GirlScript Summer of Code Ext 2024</td>
-        <td>GSSOC Ext is a Three-month-long open-source program by the GirlScript Foundation that runs from October 1 to November 10, 2024</td> 
+        <td>GSSOC Ext is a Three-month-long open-source program by the GirlScript Foundation that runs from May 2024 to Jul 2024</td> 
     </tr>
    <tr>
 </table>
